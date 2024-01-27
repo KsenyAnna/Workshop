@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Rubik+Burned&display=swap');
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  font-optical-sizing: auto;
+  background-color: #e5e5e5;
+}
+#memory_game,
+.win_block {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#memory_game h2 {
+  font-family: 'Rubik Burned', system-ui;
+}
+
+.card {
+  width: 80px;
+  height: 1px;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition-duration: 0.1s;
+}
+.opened_card {
+  background-color: white;
+  height: 100px;
+}
+.closed_card {
+  background-color: #2d384a;
+  height: 100px;
+  background-image: url('assets/back.png') !important;
+}
+#card_container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  grid-template-columns: repeat(6, 80px);
+  grid-template-rows: repeat(auto-fill, 100px);
+}
